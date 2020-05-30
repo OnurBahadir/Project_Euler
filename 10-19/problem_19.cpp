@@ -22,7 +22,7 @@ int main(){
     for(int i=1900;i<2001;i++){
         if(isLeap(i)){
             for(int j=0;j<12;j++){
-                if( (sum!=0 && sum%7==0) && i>=1901){
+                if( sum%7==0 && i>=1901){
                     day+=1;
                 }
                 sum+=daysL[j];
@@ -30,7 +30,7 @@ int main(){
         }
         else{
             for(int j=0;j<12;j++){
-                if( ( sum!=0 && sum%7==0 ) && i>=1901 ){
+                if( sum%7==0  && i>=1901 ){
                     day+=1;
                 }
                 sum+=days[j];
