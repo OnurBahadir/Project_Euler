@@ -5,7 +5,7 @@ How many Sundays fell on the first of the month during the twentieth century
 
 #include <iostream>
 
-bool isLeap(int64_t year){
+bool isLeap(const int64_t &year){
     if(year%100==0){
         return (year%400==0);
     }
